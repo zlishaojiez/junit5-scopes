@@ -1,4 +1,4 @@
-package cn.shaojiel.junit5.generator;
+package cn.shaojiel.junit5.annotation.generator;
 
 import org.junit.jupiter.api.DisplayNameGenerator;
 

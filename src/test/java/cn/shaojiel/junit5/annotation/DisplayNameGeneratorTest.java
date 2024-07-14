@@ -1,6 +1,6 @@
 package cn.shaojiel.junit5.annotation;
 
-import cn.shaojiel.junit5.generator.CustomDisplayNameGenerator;
+import cn.shaojiel.junit5.annotation.generator.CustomDisplayNameGenerator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.DisplayNameGeneration;
 import org.junit.jupiter.api.DisplayNameGenerator;
@@ -9,8 +9,6 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-
-import java.lang.reflect.Method;
 
 public class DisplayNameGeneratorTest {
 
