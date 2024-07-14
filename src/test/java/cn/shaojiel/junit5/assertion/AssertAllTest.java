@@ -35,7 +35,8 @@ class AssertAllTest {
                     assertAll("first name",
                             () -> assertTrue(firstName.startsWith("J")),
                             () -> assertTrue(firstName.endsWith("e"))
-                    ); },
+                    );
+                },
                 () -> {
                     // Grouped assertion, so processed independently
                     // of results of first name assertions.
@@ -45,9 +46,10 @@ class AssertAllTest {
                     assertAll("last name",
                             () -> assertTrue(lastName.startsWith("D")),
                             () -> assertTrue(lastName.endsWith("e"))
-                    ); }
-        ); }
-
+                    );
+                }
+        );
+    }
 
 
     private static class Person {
@@ -113,16 +115,14 @@ class AssertAllTest {
                 if (other.firstName != null) {
                     return false;
                 }
-            }
-            else if (!firstName.equals(other.firstName)) {
+            } else if (!firstName.equals(other.firstName)) {
                 return false;
             }
             if (lastName == null) {
                 if (other.lastName != null) {
                     return false;
                 }
-            }
-            else if (!lastName.equals(other.lastName)) {
+            } else if (!lastName.equals(other.lastName)) {
                 return false;
             }
             return true;
