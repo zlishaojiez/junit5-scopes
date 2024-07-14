@@ -16,24 +16,25 @@ import org.junit.jupiter.api.Test;
 @AfterEach
 @Test
  */
+@DisplayName("CommonAnnotationsTest")
 @Slf4j
 class CommonAnnotationsTest {
 
     @DisplayName("BeforeAll")
     @BeforeAll
-    static void setUpBeforeClass() {
+    static void initAll() {
         log.info("Before All");
     }
 
     @DisplayName("AfterAll")
     @AfterAll
-    static void tearDownAfterClass() {
+    static void tearDownAll() {
         log.info("After All");
     }
 
     @DisplayName("BeforeEach")
     @BeforeEach
-    void setUp() {
+    void init() {
         log.info("Before Each");
     }
 
