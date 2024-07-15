@@ -61,6 +61,16 @@
                     </excludes>
                 </configuration>
             </plugin>
+
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.3.1</version>
+                <configuration>
+                    <groups>fast</groups>
+                    <excludedGroups>integration</excludedGroups>
+                </configuration>
+            </plugin>-->
         </plugins>
     </build>
 
