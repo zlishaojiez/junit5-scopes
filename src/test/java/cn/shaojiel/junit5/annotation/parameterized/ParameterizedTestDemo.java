@@ -345,7 +345,7 @@ class ParameterizedTestDemo {
     {
         // perform assertions against person
     }
-    
+
     static class PersonAggregator implements ArgumentsAggregator {
         @Override
         public Person aggregateArguments(ArgumentsAccessor arguments, ParameterContext
